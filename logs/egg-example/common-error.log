@@ -1,0 +1,624 @@
+2019-11-07 08:00:05,177 ERROR 56006 nodejs.ClusterClientNoResponseError: client no response in 35751219ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56006
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 08:05:19,375 ERROR 56006 nodejs.ClusterClientNoResponseError: client no response in 314160ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56006
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 09:00:02,414 ERROR 56006 nodejs.ClusterClientNoResponseError: client no response in 3263498ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 56006
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:22:26,678 ERROR 61114 [-/::1/-/21ms POST /user/login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'account' in 'where clause'
+    at Query.Sequence._packetToError (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/qianduan-lidong/egg-example/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/qianduan-lidong/egg-example/node_modules/co/index.js:65:19)
+    at /Users/qianduan-lidong/egg-example/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `users` WHERE `account` = '18795875073' AND `password` = 'ld12345' LIMIT 0, 1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'account' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT * FROM `users` WHERE `account` = '18795875073' AND `password` = 'ld12345' LIMIT 0, 1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 61114
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:38:01,116 ERROR 61143 nodejs.TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be one of type string or Buffer. Received type object
+    at ServerResponse.end (_http_outgoing.js:690:13)
+    at Object.app.context.onerror (/Users/qianduan-lidong/egg-example/node_modules/koa-onerror/index.js:92:14)
+    at onerror (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/application.js:163:32)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 61143
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:38:43,200 ERROR 61145 nodejs.TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be one of type string or Buffer. Received type object
+    at ServerResponse.end (_http_outgoing.js:690:13)
+    at Object.app.context.onerror (/Users/qianduan-lidong/egg-example/node_modules/koa-onerror/index.js:92:14)
+    at onerror (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/application.js:163:32)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 61145
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-09 06:09:55,291 ERROR 61343 nodejs.ClusterClientNoResponseError: client no response in 43259525ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 61343
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-09 08:00:03,309 ERROR 61343 nodejs.ClusterClientNoResponseError: client no response in 6568269ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 61343
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-10 08:00:09,173 ERROR 61343 nodejs.ClusterClientNoResponseError: client no response in 86405825ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 61343
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-10 19:50:48,259 ERROR 61343 nodejs.ClusterClientNoResponseError: client no response in 42639070ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 61343
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-11 08:30:03,134 ERROR 61343 nodejs.ClusterClientNoResponseError: client no response in 43276420ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 61343
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-11 08:58:19,795 ERROR 61343 nodejs.ClusterClientNoResponseError: client no response in 1676647ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 61343
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-12 08:00:03,935 ERROR 62465 nodejs.ClusterClientNoResponseError: client no response in 41038744ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 62465
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-12 08:37:26,115 ERROR 62465 nodejs.ClusterClientNoResponseError: client no response in 2242010ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 62465
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-12 09:03:27,924 ERROR 62465 nodejs.ClusterClientNoResponseError: client no response in 1541801ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 62465
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-20 15:58:16,107 ERROR 88418 [-/::1/-/9ms GET /user/2] nodejs.TypeError: Cannot read property 'find' of undefined
+    at UserController.readOne (/Users/qianduan-lidong/egg-example/app/controller/user.js:9:41)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+
+pid: 88418
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-01-31 20:54:57,975 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 164775ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-01-31 22:57:57,960 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 7219967ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-01 08:58:58,950 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 36060964ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-02 08:00:07,182 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 82868214ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-02 12:19:25,698 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 15558502ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-02 12:46:29,754 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 938901ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-02 12:51:47,664 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 177891ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-02 13:04:51,918 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 124165ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-02 13:48:06,226 ERROR 2008 nodejs.ClusterClientNoResponseError: client no response in 1994217ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 2008
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:32:10,674 ERROR 17151 nodejs.SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: NO)
+    at Promise.tap.then.catch.err (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:125:19)
+From previous event:
+    at ConnectionManager.connect (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:120:13)
+    at sequelize.runHooks.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:311:50)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at ConnectionManager._connect (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:311:8)
+    at ConnectionManager.getConnection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:46)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:640:36)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:53)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at Sequelize.authenticate (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:892:17)
+    at authenticate (/Users/qianduan-lidong/egg-example/node_modules/egg-sequelize/lib/loader.js:134:22)
+    at authenticate (/Users/qianduan-lidong/egg-example/node_modules/egg-sequelize/lib/loader.js:142:13)
+name: "SequelizeAccessDeniedError"
+parent: {"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'root'@'localhost' (using password: NO)"}
+original: {"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'root'@'localhost' (using password: NO)"}
+pid: 17151
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:34:50,809 ERROR 17178 nodejs.SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: NO)
+    at Promise.tap.then.catch.err (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:125:19)
+From previous event:
+    at ConnectionManager.connect (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:120:13)
+    at sequelize.runHooks.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:311:50)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at ConnectionManager._connect (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:311:8)
+    at ConnectionManager.getConnection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:46)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:640:36)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:53)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at Sequelize.authenticate (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:892:17)
+    at authenticate (/Users/qianduan-lidong/egg-example/node_modules/egg-sequelize/lib/loader.js:134:22)
+    at authenticate (/Users/qianduan-lidong/egg-example/node_modules/egg-sequelize/lib/loader.js:142:13)
+name: "SequelizeAccessDeniedError"
+parent: {"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'root'@'localhost' (using password: NO)"}
+original: {"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'root'@'localhost' (using password: NO)"}
+pid: 17178
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:39:57,174 ERROR 17191 [-/::1/-/29ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17191
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:46:29,565 ERROR 17214 [-/::1/-/37ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17214
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:55:40,475 ERROR 17232 [-/::1/-/37ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17232
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:56:30,092 ERROR 17235 [-/::1/-/28ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17235
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-11 07:45:03,535 ERROR 17265 nodejs.ClusterClientNoResponseError: client no response in 37986511ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 17265
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-11 08:41:02,450 ERROR 17265 nodejs.ClusterClientNoResponseError: client no response in 3358888ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 17265
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-11 09:09:08,101 ERROR 17265 nodejs.ClusterClientNoResponseError: client no response in 1665633ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-example/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 17265
+hostname: qianduan-lidongdeMacBook-Pro.local
+
