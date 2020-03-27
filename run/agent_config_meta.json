@@ -1,325 +1,328 @@
 {
   "mysql": {
     "client": {
-      "database": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-      "host": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-      "port": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-      "user": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-      "password": "/Users/qianduan-lidong/egg-example/config/config.default.js"
+      "database": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+      "host": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+      "port": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+      "user": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+      "password": "/Users/qianduan-lidong/egg-demo/config/config.default.js"
     },
-    "app": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-    "agent": "/Users/qianduan-lidong/egg-example/config/config.default.js",
+    "app": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "agent": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
     "default": {
-      "database": "/Users/qianduan-lidong/egg-example/node_modules/egg-mysql/config/config.default.js",
-      "connectionLimit": "/Users/qianduan-lidong/egg-example/node_modules/egg-mysql/config/config.default.js"
+      "database": "/Users/qianduan-lidong/egg-demo/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/qianduan-lidong/egg-demo/node_modules/egg-mysql/config/config.default.js"
     }
   },
   "sequelize": {
-    "dialect": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-    "password": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-    "host": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-    "port": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-    "database": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-    "username": "/Users/qianduan-lidong/egg-example/node_modules/egg-sequelize/config/config.default.js"
+    "dialect": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "password": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "host": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "port": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "database": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "username": "/Users/qianduan-lidong/egg-demo/node_modules/egg-sequelize/config/config.default.js"
   },
   "security": {
     "csrf": {
-      "enable": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-      "type": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "useSession": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "cookieName": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "sessionName": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "headerName": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "bodyName": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+      "type": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.local.js",
-      "maxAge": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "policy": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js",
-      "checkAddress": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+      "ipBlackList": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
     }
   },
   "jsonerror": {
-    "postFormat": "/Users/qianduan-lidong/egg-example/config/config.default.js"
+    "postFormat": "/Users/qianduan-lidong/egg-demo/config/config.default.js"
   },
-  "keys": "/Users/qianduan-lidong/egg-example/config/config.default.js",
-  "middleware": "/Users/qianduan-lidong/egg-example/config/config.default.js",
+  "validate": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+  "keys": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+  "middleware": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
   "session": {
-    "maxAge": "/Users/qianduan-lidong/egg-example/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/qianduan-lidong/egg-example/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/qianduan-lidong/egg-example/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/qianduan-lidong/egg-example/node_modules/egg-session/config/config.default.js"
+    "maxAge": "/Users/qianduan-lidong/egg-demo/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/qianduan-lidong/egg-demo/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/qianduan-lidong/egg-demo/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/qianduan-lidong/egg-demo/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "/Users/qianduan-lidong/egg-example/node_modules/egg-security/config/config.default.js"
+    "shtml": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/qianduan-lidong/egg-example/node_modules/egg-jsonp/config/config.default.js",
-    "callback": "/Users/qianduan-lidong/egg-example/node_modules/egg-jsonp/config/config.default.js",
-    "csrf": "/Users/qianduan-lidong/egg-example/node_modules/egg-jsonp/config/config.default.js"
+    "limit": "/Users/qianduan-lidong/egg-demo/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/qianduan-lidong/egg-demo/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/qianduan-lidong/egg-demo/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/qianduan-lidong/egg-example/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/qianduan-lidong/egg-example/node_modules/egg-onerror/config/config.default.js",
-    "templatePath": "/Users/qianduan-lidong/egg-example/node_modules/egg-onerror/config/config.default.js"
+    "errorPageUrl": "/Users/qianduan-lidong/egg-demo/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/qianduan-lidong/egg-demo/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/qianduan-lidong/egg-demo/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/config/config.default.js",
-    "dirs": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/config/config.default.js",
-    "queryField": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/config/config.default.js",
-    "cookieField": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/config/config.default.js",
-    "cookieDomain": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/config/config.default.js",
-    "cookieMaxAge": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/config/config.default.js"
+    "defaultLocale": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/qianduan-lidong/egg-example/node_modules/egg-watcher/config/config.local.js",
+    "type": "/Users/qianduan-lidong/egg-demo/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
-      "default": "/Users/qianduan-lidong/egg-example/node_modules/egg-watcher/config/config.default.js",
-      "development": "/Users/qianduan-lidong/egg-example/node_modules/egg-watcher/config/config.default.js"
+      "default": "/Users/qianduan-lidong/egg-demo/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/qianduan-lidong/egg-demo/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "/Users/qianduan-lidong/egg-example/node_modules/egg-schedule/config/config.default.js",
-      "file": "/Users/qianduan-lidong/egg-example/node_modules/egg-schedule/config/config.default.js"
+      "consoleLevel": "/Users/qianduan-lidong/egg-demo/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/qianduan-lidong/egg-demo/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/qianduan-lidong/egg-example/node_modules/egg-schedule/config/config.default.js"
+    "directory": "/Users/qianduan-lidong/egg-demo/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "autoFields": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "fields": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "fileSize": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "files": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "whitelist": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "mode": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart/config/config.default.js"
+      "cron": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "development": {
-    "watchDirs": "/Users/qianduan-lidong/egg-example/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/qianduan-lidong/egg-example/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/Users/qianduan-lidong/egg-example/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/qianduan-lidong/egg-example/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/Users/qianduan-lidong/egg-example/node_modules/egg-development/config/config.default.js"
+    "watchDirs": "/Users/qianduan-lidong/egg-demo/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/qianduan-lidong/egg-demo/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/qianduan-lidong/egg-demo/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/qianduan-lidong/egg-demo/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/qianduan-lidong/egg-demo/node_modules/egg-development/config/config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js",
-    "hourDelimiter": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js",
-    "filesRotateBySize": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js",
-    "maxFiles": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js",
-    "rotateDuration": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js",
-    "maxDays": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/config/config.default.js"
   },
   "static": {
-    "prefix": "/Users/qianduan-lidong/egg-example/node_modules/egg-static/config/config.default.js",
-    "dir": "/Users/qianduan-lidong/egg-example/node_modules/egg-static/config/config.default.js",
-    "dynamic": "/Users/qianduan-lidong/egg-example/node_modules/egg-static/config/config.default.js",
-    "preload": "/Users/qianduan-lidong/egg-example/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/qianduan-lidong/egg-example/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/Users/qianduan-lidong/egg-example/node_modules/egg-static/config/config.default.js"
+    "prefix": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static/config/config.default.js"
   },
   "view": {
-    "root": "/Users/qianduan-lidong/egg-example/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/qianduan-lidong/egg-example/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/qianduan-lidong/egg-example/node_modules/egg-view/config/config.default.js",
-    "defaultViewEngine": "/Users/qianduan-lidong/egg-example/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/qianduan-lidong/egg-example/node_modules/egg-view/config/config.default.js"
+    "root": "/Users/qianduan-lidong/egg-demo/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/qianduan-lidong/egg-demo/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/qianduan-lidong/egg-demo/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/qianduan-lidong/egg-demo/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/qianduan-lidong/egg-demo/node_modules/egg-view/config/config.default.js"
   },
-  "env": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "name": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "proxy": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "maxIpsCount": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "maxProxyCount": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "protocolHeaders": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "ipHeaders": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "hostHeaders": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+  "env": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "name": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "version": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "description": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "private": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+    "name": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "version": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "description": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "private": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
     "egg": {
-      "declarations": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "declarations": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
-      "egg": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "egg-mysql": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "egg-sequelize": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "jsonwebtoken": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "koa-json-error": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "koa-jwt": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "mysql2": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "egg": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "koa-json-error": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "koa-jwt": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "autod": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "autod-egg": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "egg-bin": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "egg-ci": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "egg-mock": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "eslint": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "eslint-config-egg": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "sequelize-cli": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "autod": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "sequelize-cli": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "node": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "stop": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "dev": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "debug": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "test": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "test-local": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "cov": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "lint": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "ci": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "autod": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "start": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "stop": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "dev": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "debug": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "test": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "cov": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "lint": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "ci": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "autod": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "ci": {
-      "version": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "version": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "repository": {
-      "type": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "url": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "type": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "url": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
-    "author": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "license": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "author": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "license": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "HOME": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+  "baseDir": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "ignore": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "notFound": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "sitefile": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "middlewares": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "httpClient": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "bodyparser": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "pageUrl": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "/favicon.ico": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "strict": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+    "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "strict": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "depth": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "arrayLimit": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "depth": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
-    "onerror": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "onerror": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "env": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "level": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "outputJSON": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "coreLogName": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "agentLogName": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "errorLogName": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+    "dir": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "env": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "level": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.local.js"
+      "consoleLevel": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.local.js"
     },
-    "allowDebugAtProd": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "allowDebugAtProd": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+    "enableDNSCache": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "timeout": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "logging": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "enable": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "logging": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "workerStartTimeout": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-  "serverTimeout": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
+  "coreMiddleware": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "port": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-      "hostname": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "port": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js",
-    "responseTimeout": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+    "maxWaitTime": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/config.default.js"
+  "onClientError": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
 }

@@ -748,3 +748,25 @@ hostname: qianduan-lidongdeMacBook-Pro.local
 2020-03-03 17:49:29,584 INFO 62034 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
 2020-03-03 17:49:46,466 INFO 62034 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
 2020-03-04 18:42:00,571 INFO 69852 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:40:59,355 INFO 63673 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:49:24,566 INFO 63673 [egg-sequelize](9ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-26 11:54:50,027 INFO 64102 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:56:25,379 INFO 64408 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:58:24,832 INFO 64457 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 13:40:19,546 INFO 66069 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 13:46:47,618 INFO 66235 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 13:48:54,300 INFO 66291 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:06:00,940 INFO 3202 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:06:50,258 INFO 3220 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:06:53,747 ERROR 3220 [-/::1/-/18ms POST /user/login] nodejs.TypeError: Cannot set property 'status' of undefined
+    at UserController.login (/Users/qianduan-lidong/egg-demo/app/controller/user.js:41:21)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3220
+hostname: qianduaongdeMBP
+
+2020-03-27 10:07:05,782 INFO 3239 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:09:23,758 INFO 3261 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:10:44,142 INFO 3278 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:10:58,771 INFO 3295 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 11:35:27,376 INFO 3796 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result

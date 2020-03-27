@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.6
+// This file is created by egg-ts-helper@1.25.7
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -16,6 +16,7 @@ import 'egg-jsonp';
 import 'egg-view';
 import 'egg-mysql';
 import 'egg-sequelize';
+import 'egg-validate';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -33,5 +34,6 @@ declare module 'egg' {
     view?: EggPluginItem;
     mysql?: EggPluginItem;
     sequelize?: EggPluginItem;
+    validate?: EggPluginItem;
   }
 }

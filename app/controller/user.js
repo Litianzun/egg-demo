@@ -26,8 +26,8 @@ class UserController extends Controller {
   async login() {
     const ctx = this.ctx;
     const { name, password } = this.ctx.request.body;
+    ctx.validate({ name: 'string', password: 'string'})
     const user = await ctx.service.user.findOne({ name, password });
-    // const user = await ctx.model.User.findAll({ name, password });
     if (!user) {
       ctx.throw(404, "用户名或密码不正确!");
       // ctx.body = {
@@ -37,7 +37,9 @@ class UserController extends Controller {
     }
     const { id } = user;
     const token = jsonwebtoken.sign({ id, name }, secret, { expiresIn: "1d" });
+    ctx.status = 200;
     ctx.body = {
+      status: 200,
       message: "登录成功",
       token
     };
@@ -46,7 +48,7 @@ class UserController extends Controller {
     try {
       const ctx = this.ctx;
       const { name } = ctx.request.body;
-      const user = await ctx.model.User.findAll({ where: {name: name} });
+      const user = await ctx.model.User.findAll({ where: { name: name } });
       // const user = await ctx.service.user.findOne({ name });
       if (user && user.length > 0) {
         ctx.throw(409, "用户名已被占用");

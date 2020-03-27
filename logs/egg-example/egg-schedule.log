@@ -739,3 +739,63 @@
 2020-03-04 18:42:00,087 INFO 69852 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-example/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
 2020-03-04 18:42:00,087 INFO 69852 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/app/schedule/clean_log.js
 2020-03-04 18:42:00,087 INFO 69852 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-example/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 11:40:59,370 INFO 63672 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 60540633ms at 2020-03-27 04:30:00.003
+2020-03-26 11:40:59,371 INFO 63672 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 44340630ms at 2020-03-27 00:00:00.001
+2020-03-26 11:40:59,371 INFO 63672 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 44341629ms at 2020-03-27 00:00:01.000
+2020-03-26 11:40:58,937 INFO 63673 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 11:40:58,937 INFO 63673 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 11:40:58,937 INFO 63673 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 11:54:50,041 INFO 64101 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 59709962ms at 2020-03-27 04:30:00.003
+2020-03-26 11:54:50,041 INFO 64101 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 43509959ms at 2020-03-27 00:00:00.000
+2020-03-26 11:54:50,042 INFO 64101 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 43510959ms at 2020-03-27 00:00:01.001
+2020-03-26 11:54:49,653 INFO 64102 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 11:54:49,653 INFO 64102 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 11:54:49,653 INFO 64102 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 11:56:24,851 INFO 64408 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 11:56:24,851 INFO 64408 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 11:56:24,851 INFO 64408 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 11:56:25,406 INFO 64401 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 59614598ms at 2020-03-27 04:30:00.004
+2020-03-26 11:56:25,406 INFO 64401 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 43414594ms at 2020-03-27 00:00:00.000
+2020-03-26 11:56:25,407 INFO 64401 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 43415594ms at 2020-03-27 00:00:01.001
+2020-03-26 11:58:24,214 INFO 64457 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 11:58:24,214 INFO 64457 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 11:58:24,214 INFO 64457 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 13:40:19,561 INFO 66068 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 53380442ms at 2020-03-27 04:30:00.003
+2020-03-26 13:40:19,561 INFO 66068 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 37180439ms at 2020-03-27 00:00:00.000
+2020-03-26 13:40:19,562 INFO 66068 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 37181439ms at 2020-03-27 00:00:01.001
+2020-03-26 13:40:19,130 INFO 66069 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 13:40:19,130 INFO 66069 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 13:40:19,130 INFO 66069 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 13:46:47,048 INFO 66235 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 13:46:47,048 INFO 66235 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 13:46:47,048 INFO 66235 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-26 13:48:53,713 INFO 66291 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-26 13:48:53,713 INFO 66291 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-26 13:48:53,713 INFO 66291 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 10:06:00,650 INFO 3202 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 10:06:00,650 INFO 3202 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 10:06:00,650 INFO 3202 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 10:06:00,954 INFO 3198 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 66239049ms at 2020-03-28 04:30:00.003
+2020-03-27 10:06:00,954 INFO 3198 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 50039046ms at 2020-03-28 00:00:00.000
+2020-03-27 10:06:00,954 INFO 3198 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 50040046ms at 2020-03-28 00:00:01.000
+2020-03-27 10:06:49,963 INFO 3220 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 10:06:49,963 INFO 3220 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 10:06:49,963 INFO 3220 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 10:07:05,486 INFO 3239 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 10:07:05,487 INFO 3239 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 10:07:05,487 INFO 3239 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 10:09:23,460 INFO 3261 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 10:09:23,460 INFO 3261 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 10:09:23,460 INFO 3261 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 10:10:43,845 INFO 3278 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 10:10:43,846 INFO 3278 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 10:10:43,846 INFO 3278 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 10:10:58,423 INFO 3295 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 10:10:58,423 INFO 3295 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 10:10:58,423 INFO 3295 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-03-27 11:35:27,390 INFO 3795 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 60872613ms at 2020-03-28 04:30:00.003
+2020-03-27 11:35:27,390 INFO 3795 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 44672610ms at 2020-03-28 00:00:00.000
+2020-03-27 11:35:27,390 INFO 3795 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 44673610ms at 2020-03-28 00:00:01.000
+2020-03-27 11:35:27,017 INFO 3796 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-03-27 11:35:27,017 INFO 3796 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-03-27 11:35:27,017 INFO 3796 [egg-schedule]: register schedule /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

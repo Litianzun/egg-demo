@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/qianduan-lidong/egg-example/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/qianduan-lidong/egg-demo/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,8 +88,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/qianduan-lidong/egg-example/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/qianduan-lidong/egg-example/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/qianduan-lidong/egg-demo/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/qianduan-lidong/egg-demo/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -135,14 +135,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/qianduan-lidong/egg-example/app/public",
+      "dir": "/Users/qianduan-lidong/egg-demo/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/qianduan-lidong/egg-example/app/view",
+      "root": "/Users/qianduan-lidong/egg-demo/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -171,9 +171,11 @@
       "username": "root",
       "password": "<String len: 9>"
     },
+    "validate": {},
     "env": "local",
     "name": "egg-example",
     "keys": "<String len: 30>",
+    "cookies": {},
     "proxy": false,
     "maxIpsCount": 0,
     "maxProxyCount": 0,
@@ -193,6 +195,7 @@
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
         "egg-sequelize": "^5.2.1",
+        "egg-validate": "^2.0.2",
         "jsonwebtoken": "^8.5.1",
         "koa-json-error": "^3.1.2",
         "koa-jwt": "^3.6.0",
@@ -233,9 +236,9 @@
       "author": "lidongss",
       "license": "MIT"
     },
-    "baseDir": "/Users/qianduan-lidong/egg-example",
+    "baseDir": "/Users/qianduan-lidong/egg-demo",
     "HOME": "/Users/qianduan-lidong",
-    "rundir": "/Users/qianduan-lidong/egg-example/run",
+    "rundir": "/Users/qianduan-lidong/egg-demo/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -267,7 +270,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/qianduan-lidong/egg-example/logs/egg-example",
+      "dir": "/Users/qianduan-lidong/egg-demo/logs/egg-example",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -348,8 +351,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-session",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -361,9 +364,9 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-security",
-      "version": "2.7.0"
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-security",
+      "version": "2.7.1"
     },
     "jsonp": {
       "enable": true,
@@ -374,8 +377,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-jsonp",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -387,8 +390,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-onerror",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -398,8 +401,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-i18n",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -409,8 +412,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-watcher",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -420,8 +423,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-schedule",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -433,9 +436,9 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-multipart",
-      "version": "2.9.0"
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-multipart",
+      "version": "2.10.1"
     },
     "development": {
       "enable": true,
@@ -448,8 +451,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-development",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -461,8 +464,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-logrotator",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -472,8 +475,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-static",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -483,8 +486,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/node_modules/egg/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-view",
+      "from": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-view",
       "version": "2.1.2"
     },
     "mysql": {
@@ -494,8 +497,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-mysql",
+      "from": "/Users/qianduan-lidong/egg-demo/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-mysql",
       "version": "3.0.0"
     },
     "sequelize": {
@@ -505,9 +508,20 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qianduan-lidong/egg-example/config/plugin.js",
-      "path": "/Users/qianduan-lidong/egg-example/node_modules/egg-sequelize",
+      "from": "/Users/qianduan-lidong/egg-demo/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-sequelize",
       "version": "5.2.1"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-validate",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/qianduan-lidong/egg-demo/config/plugin.js",
+      "path": "/Users/qianduan-lidong/egg-demo/node_modules/egg-validate",
+      "version": "2.0.2"
     }
   }
 }

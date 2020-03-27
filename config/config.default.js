@@ -36,6 +36,10 @@ module.exports = appInfo => {
     },
     jsonerror: {
       postFormat: (err, { stack, ...rest }) => (process.env.NODE_ENV === "production" ? rest : { stack, ...rest })
+    },
+    validate: {
+      //convert: false,
+      //validateRoot: false
     }
   });
 

@@ -622,3 +622,10 @@ name: "ClusterClientNoResponseError"
 pid: 17265
 hostname: qianduan-lidongdeMacBook-Pro.local
 
+2020-03-27 10:06:53,747 ERROR 3220 [-/::1/-/18ms POST /user/login] nodejs.TypeError: Cannot set property 'status' of undefined
+    at UserController.login (/Users/qianduan-lidong/egg-demo/app/controller/user.js:41:21)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3220
+hostname: qianduaongdeMBP
+
