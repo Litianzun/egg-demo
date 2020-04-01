@@ -1,0 +1,6 @@
+2020-03-30 09:18:45,959 INFO 20112 [Job#1585531125947827901835509382] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2020-03-30 09:18:45,980 INFO 20112 [Job#1585531125947827901835509382] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 20ms
+2020-03-30 09:18:45,957 INFO 17567 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 52874050ms at 2020-03-31 00:00:00.007
+2020-03-30 09:18:46,939 INFO 17567 [Timer] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 52874064ms at 2020-03-31 00:00:01.003
+2020-03-30 09:18:46,937 INFO 20112 [Job#1585531126936827911721643572] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2020-03-30 09:18:46,943 INFO 20112 [Job#1585531126936827911721643572] /Users/qianduan-lidong/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 6ms

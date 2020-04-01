@@ -1,0 +1,782 @@
+2019-11-07 13:48:22,015 WARN 59182 [-/::1/-/19ms POST //user/list] nodejs.SyntaxError: Unexpected token o in JSON at position 3, check bodyParser config
+    at JSON.parse (<anonymous>)
+    at parse (/Users/qianduan-lidong/egg-example/node_modules/co-body/lib/json.js:57:17)
+    at AsyncFunction.module.exports [as json] (/Users/qianduan-lidong/egg-example/node_modules/co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "{\n\toffset: 1,\n\tlimit: 10\n}"
+pid: 59182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 13:48:52,352 WARN 59182 [-/::1/-/2ms POST //user/list] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-07 13:48:52,354 WARN 59182 [-/::1/-/4ms POST //user/list] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:154:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "missing csrf token"
+pid: 59182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 13:51:44,886 WARN 59182 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-07 13:51:44,886 WARN 59182 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 59182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 13:52:47,760 WARN 59182 [-/::1/-/0ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-07 13:52:47,761 WARN 59182 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 59182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 14:25:14,220 WARN 59223 [-/::1/-/12ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-07 14:25:14,223 WARN 59223 [-/::1/-/15ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 59223
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-07 14:39:54,671 WARN 59223 [-/::1/-/0ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-07 14:39:54,672 WARN 59223 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 59223
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:38:35,958 WARN 61059 [-/::1/-/19ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:38:35,960 WARN 61059 [-/::1/-/22ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:45:36,356 WARN 61059 [-/::1/-/0ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:45:36,356 WARN 61059 [-/::1/-/0ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:45:40,076 WARN 61059 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:45:40,076 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:47:37,501 WARN 61059 [-/::1/-/0ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:47:37,502 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:47:57,896 WARN 61059 [-/::1/-/0ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:47:57,897 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:49:04,400 WARN 61059 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:49:04,400 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:49:18,899 WARN 61059 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:49:18,899 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:49:36,782 WARN 61059 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:49:36,782 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:50:22,239 WARN 61059 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:50:22,239 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:50:23,299 WARN 61059 [-/::1/-/1ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:50:23,299 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 13:50:33,825 WARN 61059 [-/::1/-/0ms POST /user/list] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-11-08 13:50:33,826 WARN 61059 [-/::1/-/1ms POST /user/list] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/app/extend/context.js:163:19)
+    at csrf (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/qianduan-lidong/egg-example/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/qianduan-lidong/egg-example/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 61059
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:22:26,679 ERROR 61114 [-/::1/-/21ms POST /user/login] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'account' in 'where clause'
+    at Query.Sequence._packetToError (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    --------------------
+    at Pool.query (/Users/qianduan-lidong/egg-example/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/qianduan-lidong/egg-example/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/qianduan-lidong/egg-example/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/qianduan-lidong/egg-example/node_modules/co/index.js:65:19)
+    at /Users/qianduan-lidong/egg-example/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `users` WHERE `account` = '18795875073' AND `password` = 'ld12345' LIMIT 0, 1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'account' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT * FROM `users` WHERE `account` = '18795875073' AND `password` = 'ld12345' LIMIT 0, 1"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 61114
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:27:09,540 WARN 61120 [-/::1/-/6ms POST /user/login] nodejs.NotFoundError: 用户或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户或密码不正确!"
+pid: 61120
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:31:48,626 WARN 61120 [-/::1/-/2ms POST /user/login] nodejs.NotFoundError: 用户或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户或密码不正确!"
+pid: 61120
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:32:03,114 WARN 61120 [-/::1/-/2ms POST /user/login] nodejs.NotFoundError: 用户或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户或密码不正确!"
+pid: 61120
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:32:24,044 WARN 61120 [-/::1/-/1ms POST /user/login] nodejs.NotFoundError: 用户或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户或密码不正确!"
+pid: 61120
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:37:26,290 WARN 61141 [-/::1/-/3ms POST /user/login] nodejs.NotFoundError: 用户名或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户名或密码不正确!"
+pid: 61141
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:38:01,111 WARN 61143 [-/::1/-/17ms POST /user/login] nodejs.NotFoundError: 用户名或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户名或密码不正确!"
+pid: 61143
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:38:43,196 WARN 61145 [-/::1/-/16ms POST /user/login] nodejs.NotFoundError: 用户名或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户名或密码不正确!"
+pid: 61145
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 14:39:08,583 WARN 61147 [-/::1/-/18ms POST /user/login] nodejs.NotFoundError: 用户名或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:21:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户名或密码不正确!"
+pid: 61147
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-08 15:38:31,669 WARN 61299 [-/::1/-/3ms POST /user/login] nodejs.NotFoundError: 用户名或密码不正确!
+    at Object.throw (/Users/qianduan-lidong/egg-example/node_modules/koa/lib/context.js:97:11)
+    at UserController.login (/Users/qianduan-lidong/egg-example/app/controller/user.js:23:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "用户名或密码不正确!"
+pid: 61299
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2019-11-20 15:58:16,108 ERROR 88418 [-/::1/-/9ms GET /user/2] nodejs.TypeError: Cannot read property 'find' of undefined
+    at UserController.readOne (/Users/qianduan-lidong/egg-example/app/controller/user.js:9:41)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+
+pid: 88418
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:35:42,426 INFO 17189 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 19:39:42,281 INFO 17191 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 19:39:57,167 INFO 17191 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-02-10 19:39:57,175 ERROR 17191 [-/::1/-/29ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17191
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:46:21,167 INFO 17214 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 19:46:29,555 INFO 17214 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-02-10 19:46:29,566 ERROR 17214 [-/::1/-/37ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17214
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:55:23,316 INFO 17232 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 19:55:40,466 INFO 17232 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-02-10 19:55:40,477 ERROR 17232 [-/::1/-/37ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17232
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 19:56:12,639 INFO 17234 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 19:56:26,334 INFO 17235 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 19:56:30,084 INFO 17235 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-02-10 19:56:30,093 ERROR 17235 [-/::1/-/28ms POST /user/list] nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/Users/qianduan-lidong/egg-example/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Query.run (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at runHooks.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:29)
+From previous event:
+    at Promise.try.then.connection (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:645:12)
+From previous event:
+    at Promise.resolve.retry (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:641:10)
+    at /Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/qianduan-lidong/egg-example/node_modules/retry-as-promised/index.js:60:10)
+    at Promise.try (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:631:30)
+From previous event:
+    at Sequelize.query (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/sequelize.js:580:23)
+    at QueryInterface.select (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1757:34)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+From previous event:
+    at Function.findAll (/Users/qianduan-lidong/egg-example/node_modules/sequelize/lib/model.js:1755:8)
+    at UserController.list (/Users/qianduan-lidong/egg-example/app/controller/user.js:16:42)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/qianduan-lidong/egg-example/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:45:18)
+    at /Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:44:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at jsonError (/Users/qianduan-lidong/egg-example/node_modules/koa-json-error/lib/middleware.js:49:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/qianduan-lidong/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/qianduan-lidong/egg-example/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/qianduan-lidong/egg-example/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/qianduan-lidong/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"}
+sql: "SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;"
+parameters: undefined
+pid: 17235
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-02-10 20:04:12,138 INFO 17235 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-02-10 20:04:35,592 INFO 17266 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-02-10 20:04:39,273 INFO 17266 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 16:36:28,227 INFO 61408 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 16:37:15,767 INFO 61408 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 16:37:28,507 INFO 61408 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 16:37:40,602 INFO 61408 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 2;
+2020-03-03 16:39:48,760 INFO 61408 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 16:40:49,875 INFO 61408 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 16:48:12,584 INFO 61499 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 16:49:17,496 INFO 61512 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 16:55:52,581 INFO 61560 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 16:55:58,524 INFO 61560 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 16:56:43,581 INFO 61560 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 16:56:47,614 INFO 61560 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 16:57:50,922 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 16:57:54,886 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 16:59:49,072 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:00:33,329 INFO 61575 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:00:58,353 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:02:08,968 INFO 61575 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:02:36,141 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:06:45,678 INFO 61666 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:07:04,148 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:08:00,507 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:08:13,823 INFO 61575 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:09:38,270 INFO 61806 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:09:43,866 INFO 61806 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:11:03,092 INFO 61806 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:11:54,503 INFO 61934 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:12:02,132 INFO 61934 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:13:53,484 INFO 61935 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:14:07,044 INFO 61935 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立';
+2020-03-03 17:15:04,036 INFO 61936 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:15:19,368 INFO 61936 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:16:18,798 INFO 61938 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:16:20,239 INFO 61938 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:17:30,056 INFO 61939 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:17:36,580 INFO 61939 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:20:44,007 INFO 61939 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:20:53,757 INFO 61939 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 7;
+2020-03-03 17:20:57,051 INFO 61939 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 6;
+2020-03-03 17:21:19,691 INFO 61943 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:21:24,394 INFO 61943 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 6;
+2020-03-03 17:21:39,064 INFO 61943 [egg-sequelize](31ms) Executed (default): INSERT INTO `users` (`id`,`name`,`password`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2020-03-03 17:21:58,206 INFO 61943 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:22:38,666 INFO 61944 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:22:50,375 INFO 61944 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:23:12,377 INFO 61944 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:23:53,854 INFO 61947 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:23:58,480 INFO 61947 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立';
+2020-03-03 17:24:09,841 INFO 61947 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立';
+2020-03-03 17:24:24,271 INFO 61947 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:24:49,226 INFO 61948 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:24:56,455 INFO 61949 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:25:01,605 INFO 61949 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:25:10,601 INFO 61949 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立';
+2020-03-03 17:25:34,171 INFO 61950 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:25:39,123 INFO 61950 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:25:53,072 INFO 61951 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:25:54,167 INFO 61951 [egg-sequelize](3ms) Executed (default): INSERT INTO `users` (`id`,`name`,`password`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2020-03-03 17:26:01,639 INFO 61951 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:27:44,200 INFO 61951 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 5;
+2020-03-03 17:27:59,489 INFO 61951 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5, 5;
+2020-03-03 17:28:30,363 INFO 61953 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:32:13,341 INFO 61956 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:32:14,930 INFO 61956 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5, 5;
+2020-03-03 17:32:21,995 INFO 61956 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立';
+2020-03-03 17:32:36,441 INFO 61957 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:32:40,611 INFO 61957 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立';
+2020-03-03 17:32:43,166 INFO 61957 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立2';
+2020-03-03 17:33:01,013 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:33:02,098 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`name` = '韩立2';
+2020-03-03 17:33:02,113 INFO 61958 [egg-sequelize](4ms) Executed (default): INSERT INTO `users` (`id`,`name`,`password`,`created_at`,`updated_at`) VALUES (DEFAULT,?,?,?,?);
+2020-03-03 17:33:25,432 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 5, 5;
+2020-03-03 17:35:19,188 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:37:10,175 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:40:30,411 INFO 61958 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:40:41,057 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:40:45,456 INFO 61958 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:40:50,467 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:41:26,916 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:42:18,688 INFO 61958 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-03 17:42:31,942 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:42:35,173 INFO 61958 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user`;
+2020-03-03 17:44:05,359 INFO 61990 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:44:48,662 INFO 62005 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:47:30,564 INFO 62034 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-03 17:47:47,595 INFO 62034 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
+2020-03-03 17:49:08,065 INFO 62034 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
+2020-03-03 17:49:16,591 INFO 62034 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
+2020-03-03 17:49:29,584 INFO 62034 [egg-sequelize](0ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
+2020-03-03 17:49:46,466 INFO 62034 [egg-sequelize](1ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 5;
+2020-03-04 18:42:00,571 INFO 69852 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:40:59,355 INFO 63673 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:49:24,566 INFO 63673 [egg-sequelize](9ms) Executed (default): SELECT `id`, `name`, `password`, `create_time`, `gender`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` LIMIT 0, 10;
+2020-03-26 11:54:50,027 INFO 64102 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:56:25,379 INFO 64408 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 11:58:24,832 INFO 64457 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 13:40:19,546 INFO 66069 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 13:46:47,618 INFO 66235 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-26 13:48:54,300 INFO 66291 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:06:00,940 INFO 3202 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:06:50,258 INFO 3220 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:06:53,747 ERROR 3220 [-/::1/-/18ms POST /user/login] nodejs.TypeError: Cannot set property 'status' of undefined
+    at UserController.login (/Users/qianduan-lidong/egg-demo/app/controller/user.js:41:21)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3220
+hostname: qianduaongdeMBP
+
+2020-03-27 10:07:05,782 INFO 3239 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:09:23,758 INFO 3261 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:10:44,142 INFO 3278 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 10:10:58,771 INFO 3295 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 11:35:27,376 INFO 3796 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-27 16:34:42,761 INFO 9308 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 09:25:44,377 INFO 12996 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 09:27:18,134 INFO 13013 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 14:47:48,592 INFO 15940 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 15:21:45,781 INFO 17572 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 16:00:12,221 INFO 19323 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 16:00:31,809 INFO 19345 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 16:01:46,677 INFO 19394 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 16:29:10,789 INFO 19930 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-03-28 16:45:53,618 INFO 20112 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result

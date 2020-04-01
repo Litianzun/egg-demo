@@ -1,0 +1,21 @@
+2020-03-29 23:03:09,475 INFO 17567 [egg-logrotator] agent logger reload: got log-reload message
+2020-03-29 23:55:01,712 ERROR 17567 nodejs.ClusterClientNoResponseError: client no response in 889723ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 17567
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-03-30 09:00:36,172 ERROR 17567 nodejs.ClusterClientNoResponseError: client no response in 32694228ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 17567
+hostname: qianduan-lidongdeMacBook-Pro.local
+

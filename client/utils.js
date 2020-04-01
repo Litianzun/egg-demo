@@ -12,7 +12,7 @@ export async function request(url, method, params, ...rests) {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(params),
+      body: method === 'GET' ? null : JSON.stringify(params),
       ...rests,
     });
     const json = await response.json();

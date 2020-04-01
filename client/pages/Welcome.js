@@ -1,15 +1,11 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, View, Text} from 'react-native';
 import {ThemeProvider, Button, Avatar} from 'react-native-elements';
 import {colors} from '../common';
 import Login from './Login';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import * as actionCreators from '../config/action';
 
 const theme = {
   Button: {
@@ -19,7 +15,8 @@ const theme = {
   },
 };
 
-const Welcome = ({navigation}) => {
+const Welcome = ({navigation, ...rests}) => {
+  console.log(rests);
   let [visible, setVisible] = React.useState(false);
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -37,10 +34,14 @@ const Welcome = ({navigation}) => {
             title="开始探索!"
             style={{marginTop: 20, width: 250}}
             onPress={() => {
-              setVisible(!visible);
+              if(rests.token){
+                navigation.navigate('Main')
+              }else {
+                setVisible(!visible);
+              }
             }}
           />
-          <Login visible={visible} setVisible={setVisible} {...navigation} />
+          <Login visible={visible} setVisible={setVisible} {...navigation} {...rests} />
         </View>
       </ThemeProvider>
     </SafeAreaView>
@@ -62,4 +63,18 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Welcome;
+// 将 store 中的状态映射（map）到当前组件的 props 中
+function mapStateToProps(state) {
+  return {
+    token: state.reducers.newState.token,
+    appUser: state.reducers.newState.appUser
+  };
+}
+
+// 将 actions 中定义的方法映射到当前组件的 props 中
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+// 将 store 和 当前组件连接（connect）起来
+export default connect(mapStateToProps, mapDispatchToProps)(Welcome);

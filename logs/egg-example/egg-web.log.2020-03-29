@@ -1,0 +1,7 @@
+2020-03-29 23:03:09,472 INFO 20112 [egg-logrotator] app logger reload: got log-reload message
+2020-03-29 23:55:01,711 WARN 20112 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-03-30 09:00:36,329 WARN 20112 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-03-30 09:00:36,333 WARN 20112 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-03-30 09:18:45,980 INFO 20112 [egg-logrotator] clean all log before 31 days
+2020-03-30 09:18:46,942 INFO 20112 [egg-logrotator] broadcast log-reload
+2020-03-30 09:18:46,943 INFO 20112 [egg-logrotator] rotate files success by DayRotator, files ["/Users/qianduan-lidong/egg-demo/logs/egg-example/common-error.log -> /Users/qianduan-lidong/egg-demo/logs/egg-example/common-error.log.2020-03-29","/Users/qianduan-lidong/egg-demo/logs/egg-example/egg-example-web.log -> /Users/qianduan-lidong/egg-demo/logs/egg-example/egg-example-web.log.2020-03-29","/Users/qianduan-lidong/egg-demo/logs/egg-example/egg-web.log -> /Users/qianduan-lidong/egg-demo/logs/egg-example/egg-web.log.2020-03-29","/Users/qianduan-lidong/egg-demo/logs/egg-example/egg-schedule.log -> /Users/qianduan-lidong/egg-demo/logs/egg-example/egg-schedule.log.2020-03-29","/Users/qianduan-lidong/egg-demo/logs/egg-example/egg-agent.log -> /Users/qianduan-lidong/egg-demo/logs/egg-example/egg-agent.log.2020-03-29"]

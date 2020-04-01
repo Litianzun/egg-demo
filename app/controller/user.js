@@ -1,6 +1,11 @@
 const Controller = require("egg").Controller;
 const jsonwebtoken = require("jsonwebtoken");
 const { secret } = require("../secret");
+let qiniu = require('qiniu')
+
+const accessKey = 's9TMWyqjBgme2Sg_HIYed1-0RmUpyfFdfNhmpN8q'
+const secretKey = 'nII2-D5qmk3w3YG5tTG32-jjYYujgh1dwq2BRXqU'
+const bucket = 'egg-demo'
 
 function toInt(str) {
   if (typeof str === "number") return str;
@@ -14,7 +19,10 @@ class UserController extends Controller {
     const userId = ctx.params.id;
     const user = await ctx.model.User.findByPk(toInt(userId));
     // const user = await ctx.service.user.find(userId);
-    ctx.body = user;
+    ctx.body = {
+      status: 200,
+      data: user
+    };
   }
   async list() {
     const ctx = this.ctx;
@@ -30,9 +38,6 @@ class UserController extends Controller {
     const user = await ctx.service.user.findOne({ name, password });
     if (!user) {
       ctx.throw(404, "用户名或密码不正确!");
-      // ctx.body = {
-      //     message: '用户名或密码不正确!'
-      // }
       return;
     }
     const { id } = user;
@@ -43,6 +48,7 @@ class UserController extends Controller {
       message: "登录成功",
       token
     };
+    ctx.body.data = user
   }
   async create() {
     try {
@@ -152,6 +158,26 @@ class UserController extends Controller {
     } catch (e) {
       console.log(e);
       this.ctx.body = e;
+    }
+  }
+
+  async qiniutoken(){
+    try {
+      const ctx = this.ctx
+      let mac = new qiniu.auth.digest.Mac(accessKey,secretKey)//鉴权对象
+      let options = {
+        scope: bucket,
+        expires: 3600 * 24
+      }
+      let putPolicy = new qiniu.rs.PutPolicy(options)
+      let uploadToken = putPolicy.uploadToken(mac)
+      if(uploadToken){
+        ctx.body = JSON.stringify(uploadToken)
+      }else {
+        ctx.msg = '获取七牛token失败!'
+      }
+    } catch (error) {
+      console.log(error)
     }
   }
 }

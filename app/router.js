@@ -16,4 +16,5 @@ module.exports = app => {
   router.delete('/user/following/:id',middleware.auth(),controller.user.unfollow);
   router.post('/user/following/listfollowing',controller.follower.listFollowing);
   router.post('/user/following/listfans',controller.follower.listFans);
+  router.get('/qiniutoken',controller.user.qiniutoken)
 };

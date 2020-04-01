@@ -36,7 +36,6 @@ export default class Login extends Component {
     }
     if (code && code.state && code.state.code) {
       let currentCode = code.state.code.join('');
-      console.log(currentCode);
       if (this.state.code.toLowerCase() === currentCode.toLowerCase()) {
         const res = await requestList.login({
           name: this.state.account,
@@ -44,8 +43,10 @@ export default class Login extends Component {
         });
         console.log(res);
         if (res.status === 200) {
+          this.props.setToken(res.token)//保存token
+          this.props.setAppUser(res.data)//保存用户信息
           this.props.navigate('Main');
-          this.props.setVisible(false)
+          this.props.setVisible(false);
         }
       } else {
         this.setState({
@@ -120,27 +121,40 @@ export default class Login extends Component {
             <VerificationCode ref={e => (this.code = e)} />
           </View>
           {this.state.mode === 'login' ? (
-            <Button
-              title="登录"
-              style={{marginTop: 30}}
-              onPress={() => this.login()}
-            />
+            <View>
+              <Button
+                title="登录"
+                style={{marginTop: 30}}
+                onPress={() => this.login()}
+              />
+              <Text
+                style={{color: '#666', marginTop: 15}}
+                onPress={() => {
+                  this.setState({
+                    mode: 'regist',
+                  });
+                }}>
+                没有账号？立即注册 >>
+              </Text>
+            </View>
           ) : (
-            <Button
-              title="注册"
-              style={{marginTop: 30}}
-              onPress={() => this.regist()}
-            />
+            <View>
+              <Button
+                title="注册"
+                style={{marginTop: 30}}
+                onPress={() => this.regist()}
+              />
+              <Text
+                style={{color: '#666', marginTop: 15}}
+                onPress={() => {
+                  this.setState({
+                    mode: 'login',
+                  });
+                }}>
+                已有账号？立即登录 >>
+              </Text>
+            </View>
           )}
-          <Text
-            style={{color: '#666', marginTop: 15}}
-            onPress={() => {
-              this.setState({
-                mode: 'regist',
-              });
-            }}>
-            没有账号？立即注册 >>
-          </Text>
         </View>
       </Overlay>
     );

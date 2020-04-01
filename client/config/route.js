@@ -6,6 +6,7 @@ import Welcome from '../pages/Welcome';
 import Home from '../pages/Home';
 import {colors} from '../common';
 import Main from '../pages/Main';
+import Personal from '../pages/my/Personal';
 
 const Stack = createStackNavigator();
 
@@ -37,6 +38,11 @@ function route() {
           name="Main"
           component={Main}
           options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Personal"
+          component={Personal}
+          options={{title: '个人信息'}}
         />
         <Stack.Screen name="Home" component={Home} options={{title: '首页'}} />
       </Stack.Navigator>

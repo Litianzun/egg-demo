@@ -198,7 +198,8 @@
       "jsonwebtoken": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
       "koa-json-error": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
       "koa-jwt": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
-      "mysql2": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
+      "mysql2": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",
+      "qiniu": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "autod": "/Users/qianduan-lidong/egg-demo/node_modules/egg/config/config.default.js",

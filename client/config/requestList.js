@@ -24,13 +24,17 @@ export default {
   /**
    * 粉丝列表
    */
-  listFans: urlPar => request('/user/following/listfans', 'POST', urlPar),
+  listFans: urlPar => request('user/following/listfans', 'POST', urlPar),
   /**
    * 查询用户
    */
-  readUser: urlPar => request(`/user/${urlPar.id}`, 'GET', urlPar),
+  readUser: urlPar => request(`user/${urlPar.id}`, 'GET', urlPar),
   /**
    * 修改用户
    */
-  updateUser: urlPar => request(`/user/${urlPar.id}`, 'PATCH', urlPar),
+  updateUser: urlPar => request(`user/${urlPar.id}`, 'PATCH', urlPar),
+  /**
+   * 获取七牛token
+   */
+  getQiniuToken: urlPar => request('qiniutoken', 'GET', urlPar)
 };

@@ -1,8 +1,13 @@
-import Store from './store'
-
-export function setAppUser(appUser){
+export function setAppUser(info){
     return {
-        type: 'SET_APP_USER',
-        appUser
+        type: 'SET_APPUSER',
+        info
+    }
+}
+
+export function setToken(token){
+    return {
+        type: 'SET_TOKEN',
+        token
     }
 }
