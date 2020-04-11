@@ -29,6 +29,7 @@ _项目采用前后端分离开发，前端与后端需要分别运行命令_
 `cd client` 
 
 `npm i` 
+`pod install`
 
 `yarn ios`，启动ios模拟器（需要下载xcode）
 
