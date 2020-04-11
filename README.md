@@ -47,7 +47,9 @@ _项目采用前后端分离开发，前端与后端需要分别运行命令_
 >我的
 <img src="http://q7w4bz19x.bkt.clouddn.com/image/egg5.gif" width="200px">
 
-_项目中涉及大量图片，采用七牛云存储_ [^下面为服务端代码，返回七牛上传凭证]
+_项目中涉及大量图片，采用七牛云存储_
+
+[^下面为服务端代码，返回七牛上传凭证]
 
 ```javascript
 async qiniutoken() {
