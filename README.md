@@ -36,7 +36,7 @@ _项目采用前后端分离开发，前端与后端需要分别运行命令_
 ## 功能截图
 
 >登录
-<img src="http://q7w4bz19x.bkt.clouddn.com/image/egg1.gif" width="200px">
+<img src="http://q7w4bz19x.bkt.clouddn.com/image/egg7.gif" width="200px">
 
 >首页
 <img src="http://q7w4bz19x.bkt.clouddn.com/image/egg2.gif" width="200px">
