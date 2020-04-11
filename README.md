@@ -46,3 +46,27 @@ _项目采用前后端分离开发，前端与后端需要分别运行命令_
 
 >我的
 <img src="http://q7w4bz19x.bkt.clouddn.com/image/egg5.gif" width="200px">
+
+_项目中涉及大量图片，采用七牛云存储_
+
+```javascript
+async qiniutoken() {
+    try {
+      const ctx = this.ctx;
+      let mac = new qiniu.auth.digest.Mac(accessKey, secretKey); //鉴权对象
+      let options = {
+        scope: bucket,
+        expires: 3600 * 24
+      };
+      let putPolicy = new qiniu.rs.PutPolicy(options);
+      let uploadToken = putPolicy.uploadToken(mac);
+      if (uploadToken) {
+        ctx.body = JSON.stringify(uploadToken);
+      } else {
+        ctx.msg = "获取七牛token失败!";
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+ ```
