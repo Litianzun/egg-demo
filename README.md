@@ -6,17 +6,22 @@
 _项目采用前后端分离开发，前端与后端需要分别运行命令_
 
 >需要的环境
-*node
-*xcode
-*本地mysql
+* node
+* xcode
+* 本地mysql
 
 ##步骤
 
 后端：
 `cd egg-demo` 
+
 `npm i` 
+
 `npm run dev`，启动node本地服务
+
 前端：
 `cd client` 
+
 `npm i` 
+
 `yarn ios`，启动ios模拟器（需要下载xcode）
