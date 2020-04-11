@@ -1,11 +1,12 @@
 const Controller = require("egg").Controller;
 const jsonwebtoken = require("jsonwebtoken");
 const { secret } = require("../secret");
-let qiniu = require('qiniu')
+let qiniu = require("qiniu");
+const { Op } = require("sequelize");
 
-const accessKey = 's9TMWyqjBgme2Sg_HIYed1-0RmUpyfFdfNhmpN8q'
-const secretKey = 'nII2-D5qmk3w3YG5tTG32-jjYYujgh1dwq2BRXqU'
-const bucket = 'egg-demo'
+const accessKey = "s9TMWyqjBgme2Sg_HIYed1-0RmUpyfFdfNhmpN8q";
+const secretKey = "nII2-D5qmk3w3YG5tTG32-jjYYujgh1dwq2BRXqU";
+const bucket = "egg-demo";
 
 function toInt(str) {
   if (typeof str === "number") return str;
@@ -26,16 +27,35 @@ class UserController extends Controller {
   }
   async list() {
     const ctx = this.ctx;
-    const { limit, offset } = this.ctx.request.body;
+    const { limit, offset, key, userId } = this.ctx.request.body;
     // const results = await ctx.service.user.findAll(offset, limit);
-    const results = await ctx.model.User.findAll({ limit, offset });
-    ctx.body = results;
+    const results = await ctx.model.User.findAll({
+      limit,
+      offset,
+      where: {
+        name: {
+          [Op.substring]: key
+        }
+      },
+      //user与note的关系是一对多
+      include: {
+        model: ctx.model.Note
+      }
+    });
+    const fansRes = await ctx.model.Follower.findAll({
+      where: { fans: userId }
+    });
+    ctx.body = {
+      status: 200,
+      data: results,
+      myFollow: fansRes
+    };
   }
   async login() {
     const ctx = this.ctx;
     const { name, password } = this.ctx.request.body;
-    ctx.validate({ name: 'string', password: 'string'})
-    const user = await ctx.service.user.findOne({ name, password });
+    ctx.validate({ name: "string", password: "string" });
+    const user = await ctx.model.User.findOne({ where: { name, password } });
     if (!user) {
       ctx.throw(404, "用户名或密码不正确!");
       return;
@@ -48,7 +68,8 @@ class UserController extends Controller {
       message: "登录成功",
       token
     };
-    ctx.body.data = user
+    global.userId = id;
+    ctx.body.data = user;
   }
   async create() {
     try {
@@ -122,24 +143,31 @@ class UserController extends Controller {
   async follow() {
     try {
       const ctx = this.ctx;
-      const user = await ctx.service.user.find(ctx.request.body.user_id);
+      // const user = await ctx.service.user.find(ctx.request.body.user_id);
+      // const user = await ctx.model.User.findByPk(ctx.request.body.userId)
       // if (!user) {
       //   ctx.throw(404, "用户不存在");
       // } else {
-      if (ctx.request.body.fans != ctx.state.user.id) {
-        ctx.throw(403, "没有权限!");
-      }
-      const follower = await ctx.service.follower.findById(ctx.request.body.user_id);
+      // if (ctx.request.body.fans != ctx.state.user.id) {
+      //   ctx.throw(403, "没有权限!");
+      // }
+      // const follower = await ctx.service.follower.findById(ctx.request.body.user_id);
+      const follower = await ctx.model.Follower.findOne({
+        where: { userId: ctx.request.body.userId }
+      });
       if (follower) {
         ctx.throw(403, "已关注过此人");
       }
-      const result = await ctx.service.user.follow(ctx.request.body);
-      if (result.affectedRows === 1) {
+      // const result = await ctx.service.user.follow(ctx.request.body);
+      const result = await ctx.model.Follower.create(ctx.request.body)
+      // if (result.affectedRows === 1) {
         // ctx.status = 204;
         ctx.body = {
-          message: "关注成功"
+          status: 200,
+          message: "关注成功",
+          data: result
         };
-      }
+      // }
       // }
     } catch (e) {
       console.log(e);
@@ -149,35 +177,43 @@ class UserController extends Controller {
   async unfollow() {
     try {
       const ctx = this.ctx;
-      const res = await ctx.service.user.unfollow(ctx.params.id);
-      if (res.affectedRows > 0) {
+      // const res = await ctx.service.user.unfollow(ctx.params.id);
+      const res = await ctx.model.Follower.destroy({
+        where: {
+          userId: ctx.request.body.userId,
+          fans: ctx.request.body.fans
+        }
+      })
+      // if (res.affectedRows > 0) {
         ctx.body = {
-          message: "取关成功"
+          status: 200,
+          message: "取关成功",
+          data: res
         };
-      }
+      // }
     } catch (e) {
       console.log(e);
       this.ctx.body = e;
     }
   }
 
-  async qiniutoken(){
+  async qiniutoken() {
     try {
-      const ctx = this.ctx
-      let mac = new qiniu.auth.digest.Mac(accessKey,secretKey)//鉴权对象
+      const ctx = this.ctx;
+      let mac = new qiniu.auth.digest.Mac(accessKey, secretKey); //鉴权对象
       let options = {
         scope: bucket,
         expires: 3600 * 24
-      }
-      let putPolicy = new qiniu.rs.PutPolicy(options)
-      let uploadToken = putPolicy.uploadToken(mac)
-      if(uploadToken){
-        ctx.body = JSON.stringify(uploadToken)
-      }else {
-        ctx.msg = '获取七牛token失败!'
+      };
+      let putPolicy = new qiniu.rs.PutPolicy(options);
+      let uploadToken = putPolicy.uploadToken(mac);
+      if (uploadToken) {
+        ctx.body = JSON.stringify(uploadToken);
+      } else {
+        ctx.msg = "获取七牛token失败!";
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 }

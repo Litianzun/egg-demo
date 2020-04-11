@@ -169,7 +169,12 @@
       "host": "127.0.0.1",
       "port": 3306,
       "username": "root",
-      "password": "<String len: 9>"
+      "password": "<String len: 9>",
+      "timezone": "+8:00",
+      "dialectOptions": {
+        "dateStrings": true,
+        "typeCast": "<Function typeCast>"
+      }
     },
     "validate": {},
     "env": "local",

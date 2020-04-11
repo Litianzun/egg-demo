@@ -10,10 +10,14 @@ module.exports = app => {
     create_time: DATE,
     gender: ENUM(["男", "女", "其他"]),
     avatarUrl: STRING(100),
-    introduction: STRING(100)
+    introduction: STRING(100),
     // created_at: DATE,
     // updated_at: DATE
   });
+
+  User.associate = function(){
+    app.model.User.hasMany(app.model.Note,{foreignKey: 'userId'})
+  }
 
   return User;
 };

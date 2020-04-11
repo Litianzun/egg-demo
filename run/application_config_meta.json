@@ -20,6 +20,11 @@
     "host": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
     "port": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
     "database": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "timezone": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+    "dialectOptions": {
+      "dateStrings": "/Users/qianduan-lidong/egg-demo/config/config.default.js",
+      "typeCast": "/Users/qianduan-lidong/egg-demo/config/config.default.js"
+    },
     "username": "/Users/qianduan-lidong/egg-demo/node_modules/egg-sequelize/config/config.default.js"
   },
   "security": {

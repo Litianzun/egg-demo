@@ -12,11 +12,12 @@ export default {
   /**
    * 关注
    */
-  follow: urlPar => request('user/following', 'POST', urlPar),
+  follow: (urlPar, token) => request('user/following', 'POST', urlPar, token),
   /**
    * 取消关注
    */
-  unfollow: urlPar => request(`user/following/${urlPar.id}`, 'DELETE', urlPar),
+  unfollow: (urlPar, token) =>
+    request(`user/unfollowing`, 'POST', urlPar, token),
   /**
    * 关注列表
    */
@@ -32,9 +33,22 @@ export default {
   /**
    * 修改用户
    */
-  updateUser: urlPar => request(`user/${urlPar.id}`, 'PATCH', urlPar),
+  updateUser: (urlPar, token) =>
+    request(`user/${urlPar.id}`, 'PATCH', urlPar, token),
   /**
    * 获取七牛token
    */
-  getQiniuToken: urlPar => request('qiniutoken', 'GET', urlPar)
+  getQiniuToken: urlPar => request('qiniutoken', 'GET', urlPar),
+  /**
+   * 获取帖子列表
+   */
+  listNote: urlPar => request('note/list', 'POST', urlPar),
+  /**
+   * 新增帖子
+   */
+  createNote: urlPar => request('note', 'POST', urlPar),
+  /**
+   * 用户列表
+   */
+  listUser: urlPar => request('user/list', 'POST', urlPar),
 };

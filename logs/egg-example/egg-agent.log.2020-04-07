@@ -1,0 +1,111 @@
+2020-04-05 12:55:01,380 INFO 51182 [egg-logrotator] agent logger reload: got log-reload message
+2020-04-06 06:12:01,725 ERROR 51182 nodejs.ClusterClientNoResponseError: client no response in 43268680ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 51182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-04-06 12:15:08,414 ERROR 51182 nodejs.ClusterClientNoResponseError: client no response in 21746639ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 51182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-04-06 20:07:20,429 ERROR 51182 nodejs.ClusterClientNoResponseError: client no response in 28332007ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 51182
+hostname: qianduan-lidongdeMacBook-Pro.local
+
+2020-04-06 20:17:18,661 INFO 54792 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-04-06 20:17:18,160 INFO 54792 [egg:logger] init all loggers with options: {"dir":"/Users/qianduan-lidong/egg-demo/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-06 20:17:18,535 INFO 54792 [egg:core] dump config after load, 5ms
+2020-04-06 20:17:18,572 INFO 54792 [egg-watcher] Start watching: ["/Users/qianduan-lidong/egg-demo/app","/Users/qianduan-lidong/egg-demo/config","/Users/qianduan-lidong/egg-demo/mocks","/Users/qianduan-lidong/egg-demo/mocks_proxy","/Users/qianduan-lidong/egg-demo/app.js"]
+2020-04-06 20:17:18,572 INFO 54792 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app"
+2020-04-06 20:17:18,573 INFO 54792 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/config"
+2020-04-06 20:17:18,573 INFO 54792 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks"
+2020-04-06 20:17:18,573 INFO 54792 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks_proxy"
+2020-04-06 20:17:18,573 INFO 54792 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app.js"
+2020-04-06 20:17:18,573 INFO 54792 [egg-watcher:agent] watcher start success
+2020-04-06 20:17:18,668 INFO 54792 [egg:core] dump config after ready, 4ms
+2020-04-06 22:05:02,635 ERROR 54792 nodejs.ClusterClientNoResponseError: client no response in 1763392ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 54792
+hostname: promote.cache-dns.local
+
+2020-04-07 06:16:40,929 ERROR 54792 nodejs.ClusterClientNoResponseError: client no response in 28818275ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 54792
+hostname: promote.cache-dns.local
+
+2020-04-07 09:02:10,239 ERROR 54792 nodejs.ClusterClientNoResponseError: client no response in 9929146ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/qianduan-lidong/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 54792
+hostname: promote.cache-dns.local
+
+2020-04-07 09:59:59,350 INFO 57410 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-04-07 09:59:58,712 INFO 57410 [egg:logger] init all loggers with options: {"dir":"/Users/qianduan-lidong/egg-demo/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-07 09:59:59,052 INFO 57410 [egg:core] dump config after load, 4ms
+2020-04-07 09:59:59,250 INFO 57410 [egg-watcher] Start watching: ["/Users/qianduan-lidong/egg-demo/app","/Users/qianduan-lidong/egg-demo/config","/Users/qianduan-lidong/egg-demo/mocks","/Users/qianduan-lidong/egg-demo/mocks_proxy","/Users/qianduan-lidong/egg-demo/app.js"]
+2020-04-07 09:59:59,250 INFO 57410 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app"
+2020-04-07 09:59:59,251 INFO 57410 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/config"
+2020-04-07 09:59:59,251 INFO 57410 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks"
+2020-04-07 09:59:59,251 INFO 57410 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks_proxy"
+2020-04-07 09:59:59,251 INFO 57410 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app.js"
+2020-04-07 09:59:59,252 INFO 57410 [egg-watcher:agent] watcher start success
+2020-04-07 09:59:59,358 INFO 57410 [egg:core] dump config after ready, 5ms
+2020-04-07 11:31:56,934 INFO 59041 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-04-07 11:31:56,528 INFO 59041 [egg:logger] init all loggers with options: {"dir":"/Users/qianduan-lidong/egg-demo/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-07 11:31:56,854 INFO 59041 [egg:core] dump config after load, 5ms
+2020-04-07 11:31:56,891 INFO 59041 [egg-watcher] Start watching: ["/Users/qianduan-lidong/egg-demo/app","/Users/qianduan-lidong/egg-demo/config","/Users/qianduan-lidong/egg-demo/mocks","/Users/qianduan-lidong/egg-demo/mocks_proxy","/Users/qianduan-lidong/egg-demo/app.js"]
+2020-04-07 11:31:56,891 INFO 59041 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app"
+2020-04-07 11:31:56,891 INFO 59041 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/config"
+2020-04-07 11:31:56,891 INFO 59041 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks"
+2020-04-07 11:31:56,891 INFO 59041 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks_proxy"
+2020-04-07 11:31:56,892 INFO 59041 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app.js"
+2020-04-07 11:31:56,892 INFO 59041 [egg-watcher:agent] watcher start success
+2020-04-07 11:31:56,942 INFO 59041 [egg:core] dump config after ready, 5ms
+2020-04-07 13:49:56,210 WARN 59041 [agent:development] reload worker because /Users/qianduan-lidong/egg-demo/app/controller/note.js change
+2020-04-07 13:49:56,005 INFO 59041 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/qianduan-lidong/egg-demo/app/controller/note.js","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":31559019,"size":542,"blocks":8,"atimeMs":1586238595940.5142,"mtimeMs":1586238595942.7207,"ctimeMs":1586238595942.7207,"birthtimeMs":1585817506011.935,"atime":"2020-04-07T05:49:55.941Z","mtime":"2020-04-07T05:49:55.943Z","ctime":"2020-04-07T05:49:55.943Z","birthtime":"2020-04-02T08:51:46.012Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-04-07 23:12:41,136 INFO 62979 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-04-07 23:12:40,754 INFO 62979 [egg:logger] init all loggers with options: {"dir":"/Users/qianduan-lidong/egg-demo/logs/egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-07 23:12:41,050 INFO 62979 [egg:core] dump config after load, 4ms
+2020-04-07 23:12:41,091 INFO 62979 [egg-watcher] Start watching: ["/Users/qianduan-lidong/egg-demo/app","/Users/qianduan-lidong/egg-demo/config","/Users/qianduan-lidong/egg-demo/mocks","/Users/qianduan-lidong/egg-demo/mocks_proxy","/Users/qianduan-lidong/egg-demo/app.js"]
+2020-04-07 23:12:41,091 INFO 62979 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app"
+2020-04-07 23:12:41,091 INFO 62979 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/config"
+2020-04-07 23:12:41,091 INFO 62979 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks"
+2020-04-07 23:12:41,091 INFO 62979 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/mocks_proxy"
+2020-04-07 23:12:41,091 INFO 62979 [egg-watcher] Start watching: "/Users/qianduan-lidong/egg-demo/app.js"
+2020-04-07 23:12:41,092 INFO 62979 [egg-watcher:agent] watcher start success
+2020-04-07 23:12:41,143 INFO 62979 [egg:core] dump config after ready, 4ms
+2020-04-07 23:15:05,741 WARN 62979 [agent:development] reload worker because /Users/qianduan-lidong/egg-demo/app/controller/note.js change
+2020-04-07 23:15:05,537 INFO 62979 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/qianduan-lidong/egg-demo/app/controller/note.js","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":31559019,"size":674,"blocks":8,"atimeMs":1586272505472.9956,"mtimeMs":1586272505475.3223,"ctimeMs":1586272505475.3223,"birthtimeMs":1585817506011.935,"atime":"2020-04-07T15:15:05.473Z","mtime":"2020-04-07T15:15:05.475Z","ctime":"2020-04-07T15:15:05.475Z","birthtime":"2020-04-02T08:51:46.012Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-04-07 23:15:42,138 INFO 62979 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/qianduan-lidong/egg-demo/app/router.js","stat":{"dev":16777221,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":29652025,"size":1055,"blocks":8,"atimeMs":1586272542076.7708,"mtimeMs":1586272542077.3108,"ctimeMs":1586272542077.3108,"birthtimeMs":1573012560316.847,"atime":"2020-04-07T15:15:42.077Z","mtime":"2020-04-07T15:15:42.077Z","ctime":"2020-04-07T15:15:42.077Z","birthtime":"2019-11-06T03:56:00.317Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-04-07 23:15:42,343 WARN 62979 [agent:development] reload worker because /Users/qianduan-lidong/egg-demo/app/router.js change

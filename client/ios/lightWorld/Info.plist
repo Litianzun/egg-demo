@@ -16,6 +16,15 @@
         <string>$(PRODUCT_NAME)</string>
         <key>CFBundlePackageType</key>
         <string>APPL</string>
+        <key>NSCameraUsageDescription</key>
+        <string>$(PRODUCT_NAME) need permission to access the camera. that you can use it to 
+          scan your document and upload it.</string>
+        <key>NSMicrophoneUsageDescription</key>
+        <string>$(PRODUCT_NAME) Need permission to access to your microphone</string>
+        <key>NSPhotoLibraryAddUsageDescription</key>
+        <string>$(PRODUCT_NAME) Need permission to access to your Photo library</string>
+        <key>NSPhotoLibraryUsageDescription</key>
+        <string>$(PRODUCT_NAME)  Need permission to access to your Photo library to be accessed for the first time</string>
         <key>CFBundleShortVersionString</key>
         <string>1.0</string>
         <key>CFBundleSignature</key>

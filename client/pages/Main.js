@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Home';
-import News from './News';
+import Explore from './Explore';
 import My from './my/My';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Icon} from 'react-native-elements';
@@ -36,10 +36,10 @@ export default function Main() {
         }}
       />
       <Tab.Screen
-        name="news"
-        component={News}
+        name="explore"
+        component={Explore}
         options={{
-          title: '要闻',
+          title: '发现',
           tabBarIcon: ({focused, color, size}) => (
             <Icon
               name="eye"

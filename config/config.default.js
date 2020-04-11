@@ -27,7 +27,18 @@ module.exports = appInfo => {
       password: "ld6465455",
       host: "127.0.0.1",
       port: 3306,
-      database: "test"
+      database: "test",
+      timezone: "+8:00", // 由于orm用的UTC时间，这里必须加上东八区，否则取出来的时间相差8小时
+      dialectOptions: {
+        // 让读取date类型数据时返回字符串而不是UTC时间
+        dateStrings: true,
+        typeCast(field, next) {
+          if (field.type === "DATETIME") {
+            return field.string();
+          }
+          return next();
+        }
+      }
     },
     security: {
       csrf: {
@@ -35,7 +46,8 @@ module.exports = appInfo => {
       }
     },
     jsonerror: {
-      postFormat: (err, { stack, ...rest }) => (process.env.NODE_ENV === "production" ? rest : { stack, ...rest })
+      postFormat: (err, { stack, ...rest }) =>
+        process.env.NODE_ENV === "production" ? rest : { stack, ...rest }
     },
     validate: {
       //convert: false,

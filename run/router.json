@@ -138,22 +138,11 @@
   {
     "name": null,
     "methods": [
-      "DELETE"
+      "POST"
     ],
-    "paramNames": [
-      {
-        "name": "id",
-        "prefix": "/",
-        "delimiter": "/",
-        "optional": false,
-        "repeat": false,
-        "partial": false,
-        "asterisk": false,
-        "pattern": "[^\\/]+?"
-      }
-    ],
-    "path": "/user/following/:id",
-    "regexp": "/^\\/user\\/following\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "paramNames": [],
+    "path": "/user/unfollowing",
+    "regexp": "/^\\/user\\/unfollowing(?:\\/(?=$))?$/",
     "stack": [
       "jwt",
       "wrappedController"
@@ -192,6 +181,30 @@
     "paramNames": [],
     "path": "/qiniutoken",
     "regexp": "/^\\/qiniutoken(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/note/list",
+    "regexp": "/^\\/note\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/note",
+    "regexp": "/^\\/note(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

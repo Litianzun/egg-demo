@@ -3,19 +3,22 @@ import {
   View,
   Text,
   SafeAreaView,
-  StyleSheet,
   FlatList,
-  TouchableOpacity,
+  StyleSheet,
   ActivityIndicator,
 } from 'react-native';
 import {SearchBar} from 'react-native-elements';
-import NoteItem from './components/NoteItem';
 import requestList from '../config/requestList';
 import {colors} from '../common';
+import ExploreItem from './components/ExploreItem';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import * as actionCreators from '../config/action';
 
 let offset = 0,
-  limit = 5;
-export default class Home extends Component {
+  limit = 10;
+
+class Explore extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +39,7 @@ export default class Home extends Component {
   componentDidMount() {
     this.getData();
   }
+
   async getData() {
     try {
       let oldData = this.state.data;
@@ -43,14 +47,23 @@ export default class Home extends Component {
         offset: offset,
         limit: limit,
         key: this.state.searchkey,
+        userId: this.props.appUser.id,
       };
       console.log(urlPar);
-      const res = await requestList.listNote(urlPar);
+      const res = await requestList.listUser(urlPar);
       console.log(res);
       if (res.status === 200) {
         let newData = oldData.concat(res.data);
+        newData.map(item => {
+          let flag = res.myFollow.some(item2 => item2.userId == item.id);
+          if (flag) {
+            item.isFollow = true;
+          } else {
+            item.isFollow = false;
+          }
+        });
         this.setState({
-          data: newData,
+          data: newData.filter(item => item.id !== this.props.appUser.id),
           refreshing: false,
           hasMore: res.data.length >= limit,
           loadingMore: false,
@@ -61,6 +74,44 @@ export default class Home extends Component {
     }
   }
 
+  async handleFollow(item, index) {
+    try {
+      let urlPar = {
+        userId: item.id,
+        fans: this.props.appUser.id,
+      };
+      let res = await requestList.follow(urlPar, this.props.token);
+      console.log(res);
+      if (res.status === 200) {
+        let data = this.state.data;
+        data[index].isFollow = true;
+        this.setState({
+          data,
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  async handleUnfollow(item, index) {
+    try {
+      let urlPar = {
+        userId: item.id,
+        fans: this.props.appUser.id,
+      };
+      let res = await requestList.unfollow(urlPar, this.props.token);
+      console.log(res);
+      if (res.status === 200) {
+        let data = this.state.data;
+        data[index].isFollow = false;
+        this.setState({
+          data,
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
   onSubmit = e => {
     offset = 0;
     this.setState(
@@ -72,6 +123,7 @@ export default class Home extends Component {
       },
     );
   };
+
   onRefresh = () => {
     offset = 0;
     this.setState({refreshing: true, data: []}, () => {
@@ -91,22 +143,21 @@ export default class Home extends Component {
     }
   };
 
-  toWrite() {
-    this.props.navigation.navigate('WriteNote', {
-      callback: () => {
-        this.onRefresh();
-      },
-    });
-  }
-
   _renderItem = info => {
-    return <NoteItem {...info.item} />;
+    return (
+      <ExploreItem
+        {...info.item}
+        handleFollow={() => this.handleFollow(info.item, info.index)}
+        handleUnfollow={() => this.handleUnfollow(info.item, info.index)}
+      />
+    );
   };
+
   render() {
     return (
       <SafeAreaView style={{flex: 1}}>
         <SearchBar
-          placeholder="请输入文章关键字查询"
+          placeholder="请输入用户名称查询"
           value={this.state.searchkey}
           onChangeText={this.changeSearchkey}
           containerStyle={styles.searchBox}
@@ -116,7 +167,7 @@ export default class Home extends Component {
         <FlatList
           style={{flex: 1}}
           data={this.state.data}
-          keyExtractor={(item, index) => String(item.noteId)}
+          keyExtractor={(item, index) => String(item.id)}
           renderItem={this._renderItem}
           refreshing={this.state.refreshing}
           onRefresh={this.onRefresh}
@@ -130,9 +181,6 @@ export default class Home extends Component {
             ) : null
           }
         />
-        <TouchableOpacity style={styles.writeBt} onPress={() => this.toWrite()}>
-          <Text style={styles.writeBt_text}>+</Text>
-        </TouchableOpacity>
       </SafeAreaView>
     );
   }
@@ -144,25 +192,6 @@ const styles = StyleSheet.create({
     borderTopColor: '#eee',
     borderBottomColor: '#eee',
   },
-  writeBt: {
-    width: 50,
-    height: 50,
-    borderRadius: 50,
-    backgroundColor: colors.blue,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    bottom: 50,
-    right: 30,
-  },
-  writeBt_text: {
-    color: '#fff',
-    fontSize: 38,
-    fontWeight: '600',
-    lineHeight: 40,
-    textAlign: 'center',
-  },
   bottomTip: {
     fontSize: 13,
     color: '#666',
@@ -171,3 +200,19 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
 });
+
+// 将 store 中的状态映射（map）到当前组件的 props 中
+function mapStateToProps(state) {
+  return {
+    token: state.reducers.newState.token,
+    appUser: state.reducers.newState.appUser,
+  };
+}
+
+// 将 actions 中定义的方法映射到当前组件的 props 中
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+// 将 store 和 当前组件连接（connect）起来
+export default connect(mapStateToProps, mapDispatchToProps)(Explore);

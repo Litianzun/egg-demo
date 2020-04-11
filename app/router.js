@@ -13,8 +13,10 @@ module.exports = app => {
   router.patch('/user/:id',middleware.auth(),middleware.checkOwner(),controller.user.update);
   router.delete('/user/:id',middleware.auth(),middleware.checkOwner(),controller.user.delete);
   router.post('/user/following',middleware.auth(),controller.user.follow);
-  router.delete('/user/following/:id',middleware.auth(),controller.user.unfollow);
+  router.post('/user/unfollowing',middleware.auth(),controller.user.unfollow);
   router.post('/user/following/listfollowing',controller.follower.listFollowing);
   router.post('/user/following/listfans',controller.follower.listFans);
   router.get('/qiniutoken',controller.user.qiniutoken)
+  router.post('/note/list',controller.note.listNotes)
+  router.post('/note',controller.note.createNotes)
 };

@@ -23,8 +23,8 @@ import ImagePicker from 'react-native-image-picker';
 
 const List = [
   {title: '个人信息', redirect: 'Personal'},
-  {title: '关注列表', redirect: ''},
-  {title: '粉丝列表', redirect: ''},
+  {title: '关注列表', redirect: 'Following'},
+  {title: '粉丝列表', redirect: 'Fans'},
 ];
 class My extends Component {
   constructor(props) {
@@ -113,6 +113,12 @@ class My extends Component {
         appUser.avatarUrl = baseUrl + jsonRes.key;
         this.props.setAppUser(appUser);
         this.forceUpdate();
+        //调user更新接口
+        const updateRes = await requestList.updateUser(
+          appUser,
+          this.props.token,
+        );
+        console.log(updateRes);
       } else {
         console.log('图片上传失败');
       }

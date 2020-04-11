@@ -3,15 +3,19 @@
  */
 
 //1.通信方法request
-export async function request(url, method, params, ...rests) {
+export async function request(url, method, params, token = null, ...rests) {
   try {
     const baseUrl = 'http://localhost:7001/';
+    let headers = {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    };
+    if(token){
+      headers['Authorization'] = 'Bearer' + ' ' + token
+    }
     const response = await fetch(baseUrl + url, {
       method: method,
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
+      headers,
       body: method === 'GET' ? null : JSON.stringify(params),
       ...rests,
     });
