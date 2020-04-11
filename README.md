@@ -29,3 +29,9 @@ _项目采用前后端分离开发，前端与后端需要分别运行命令_
 `npm i` 
 
 `yarn ios`，启动ios模拟器（需要下载xcode）
+
+## 功能截图
+
+>登录
+
+![egg1](http://q7w4bz19x.bkt.clouddn.com/image/egg1.gif)
