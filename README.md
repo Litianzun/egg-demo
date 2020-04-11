@@ -1,8 +1,7 @@
 # egg-demo
 本项目采用的是阿里的egg.js框架，egg是一个用于企业级开发的渐进式框架，官网：<https://eggjs.org/zh-cn/>
 
-后端：koa2 + mysql + sequelize，尽量符合Restful API风格，当前这些都是经过egg封装过的
-前端：react-native + redux持久化，所有库采用最新版本，当前rn版本：0.61.5
+后端：koa2 + mysql + sequelize，尽量符合Restful API风格，当前这些都是经过egg封装过的  前端：react-native + redux持久化，所有库采用最新版本，当前rn版本：0.61.5
 
 _项目采用前后端分离开发，前端与后端需要分别运行命令_
 
