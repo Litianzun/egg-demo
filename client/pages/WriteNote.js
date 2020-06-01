@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import {
   View,
-  Text,
   Image,
   TouchableOpacity,
   StyleSheet,
-  PermissionsAndroid,
-  Platform,
   TouchableWithoutFeedback,
 } from 'react-native';
 import {Button, Input} from 'react-native-elements';
@@ -268,7 +265,10 @@ function mapDispatchToProps(dispatch) {
 }
 
 // 将 store 和 当前组件连接（connect）起来
-export default connect(mapStateToProps, mapDispatchToProps)(WriteNote);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(WriteNote);
 
 const styles = StyleSheet.create({
   imgView: {

@@ -1,0 +1,15 @@
+
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+package-lock.json
+yarn.lock
+logs/
+

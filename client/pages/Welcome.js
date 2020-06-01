@@ -16,7 +16,6 @@ const theme = {
 };
 
 const Welcome = ({navigation, ...rests}) => {
-  console.log(rests);
   let [visible, setVisible] = React.useState(false);
   return (
     <SafeAreaView style={{flex: 1}}>

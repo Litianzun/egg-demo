@@ -116,7 +116,7 @@ export default class Home extends Component {
         <FlatList
           style={{flex: 1}}
           data={this.state.data}
-          keyExtractor={(item, index) => String(item.noteId)}
+          keyExtractor={item => String(item.noteId)}
           renderItem={this._renderItem}
           refreshing={this.state.refreshing}
           onRefresh={this.onRefresh}

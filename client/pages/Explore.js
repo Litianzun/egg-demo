@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {
-  View,
   Text,
   SafeAreaView,
   FlatList,
@@ -9,7 +8,6 @@ import {
 } from 'react-native';
 import {SearchBar} from 'react-native-elements';
 import requestList from '../config/requestList';
-import {colors} from '../common';
 import ExploreItem from './components/ExploreItem';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -215,4 +213,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 // 将 store 和 当前组件连接（connect）起来
-export default connect(mapStateToProps, mapDispatchToProps)(Explore);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Explore);
