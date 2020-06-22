@@ -35,7 +35,7 @@ _项目采用前后端分离开发，前端与后端需要分别运行命令_
 
 ## 功能截图
 
->登录
+>登录(验证码问题刷新问题现已修复)
 <img src="http://qc9tj18zu.bkt.clouddn.com/image/egg7.gif" width="200px">
 
 >首页
